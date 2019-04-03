@@ -1,6 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-WebAppsrc/assets/js/Vue/Live/ThreeJs/Libs/* linguist-vendored
+WebApp/src/assets/js/Vue/Live/ThreeJs/Libs/* linguist-vendored
 
 WebApp/public/* linguist-vendored
