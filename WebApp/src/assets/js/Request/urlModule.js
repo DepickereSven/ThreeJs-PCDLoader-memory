@@ -5,9 +5,9 @@
 
 module.exports = (function () {
     
-    const IP_LABO = "localhost";
+    const IP = "localhost";
     const PORT = "9561";
-    const BASE_URL = "http://" + IP_LABO + ":" + PORT + "/api/v1/";
+    const BASE_URL = "http://" + IP + ":" + PORT + "/api/v1/";
     const DATA_URL = "data/";
     const C_DATA_URL = BASE_URL + DATA_URL;
 
