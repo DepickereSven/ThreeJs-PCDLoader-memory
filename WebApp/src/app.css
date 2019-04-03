@@ -1,0 +1,45 @@
+#app .v-input__slot{
+    margin-bottom: 0;
+}
+
+/** Styling background view **/
+
+#app .secondary-background{
+    background-color: #eee;
+    padding: 0 0 0 0 !important;
+}
+
+/** Styling buttons **/
+
+#app .btn-t-w{
+    color: #fff;
+}
+
+#app .big-fa{
+    font-size: 20px;
+    color: #fff;
+}
+
+#app .settings .space{
+    margin-bottom: 3%;
+}
+
+#app .bold{
+    font-weight: bold;
+}
+
+#app .btn-s{
+    width: 100%;
+}
+
+#app .btn-s .redo{
+    padding-right: 50%;
+}
+
+#app .pl-0{
+    margin-bottom: 3%;
+}
+
+#app .mousePointer{
+    cursor: pointer;
+}
