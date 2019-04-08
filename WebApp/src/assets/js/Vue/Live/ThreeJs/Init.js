@@ -92,6 +92,7 @@ export default (function () {
         let mesh = loader.parse(data, 'liveFeed');
         PerrinePCD.geometry = mesh.geometry;
         PerrinePCD.geometry.center();
+        PerrinePCD.geometry.dispose();
     }
 
     function animate() {
