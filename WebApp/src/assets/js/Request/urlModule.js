@@ -12,7 +12,8 @@ module.exports = (function () {
     const C_DATA_URL = BASE_URL + DATA_URL;
 
     const url = {
-        PCD: C_DATA_URL + "pcd"
+        PCD: C_DATA_URL + "pcd",
+        PCD2: C_DATA_URL + "pcd"
     };
 
     return {
