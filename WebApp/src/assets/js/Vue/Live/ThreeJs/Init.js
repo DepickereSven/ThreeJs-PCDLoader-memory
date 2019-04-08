@@ -39,7 +39,7 @@ export default (function () {
         renderer.setSize(window.innerWidth, window.innerHeight);
         document.body.appendChild(renderer.domElement);
         var loader = new Three.PCDLoader();
-        loader.load('liveFeed.pcd', function (points) {
+        loader.load('PCD1.pcd', function (points) {
             points.name = "liveFeed";
             points.scale.multiplyScalar(0.001);
             points.geometry.center();
