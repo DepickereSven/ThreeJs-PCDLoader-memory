@@ -90,9 +90,12 @@ export default (function () {
         // TODO Change to the right data input to load directly
         let data = enc.encode(PCDData);
         let mesh = loader.parse(data, 'liveFeed');
+        PerrinePCD.geometry.dispose();
         PerrinePCD.geometry = mesh.geometry;
         PerrinePCD.geometry.center();
-        PerrinePCD.geometry.dispose();
+        console.log();
+        console.log(PerrinePCD.geometry.boundingBox.max);
+        console.log(PerrinePCD.geometry.boundingBox.min);
     }
 
     function animate() {
