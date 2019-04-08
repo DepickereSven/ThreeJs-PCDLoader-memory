@@ -7,6 +7,8 @@ import Three from "./ThreeJs/Init"
 
 export default  (function () {
 
+    let counter = 1;
+
     async function initThree(container) {
         await Three.init(container);
         await Three.animate();
@@ -14,7 +16,12 @@ export default  (function () {
 
     async function updateThree(_self) {
         while (_self.update) {
-            let newPCD = await _self.request();
+            let newPCD;
+            if (counter % 2 === 0){
+                newPCD = await _self.request();
+            } else {
+                newPCD = await _self.request2();
+            }
             if (newPCD.error){
                 _self.snack.status = true;
                 _self.snack.text = newPCD.msg;
@@ -23,6 +30,7 @@ export default  (function () {
                 await Three.updateFigure(newPCD.data);
                 // _self.update = false;
             }
+            counter++;
         }
     }
 

@@ -13,7 +13,7 @@ module.exports = (function () {
 
     const url = {
         PCD: C_DATA_URL + "pcd",
-        PCD2: C_DATA_URL + "pcd"
+        PCD2: C_DATA_URL + "pcdd"
     };
 
     return {

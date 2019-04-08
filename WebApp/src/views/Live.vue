@@ -20,6 +20,7 @@
         data: () => ({
             requestHandler: "",
             request: requestHandler.requests.PCD,
+            request2: requestHandler.requests.PCD2,
             update: true,
             dialog: false,
             info: 'cyan darken-2',
